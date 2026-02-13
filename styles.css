@@ -33,18 +33,21 @@ body {
 .page {
   width: min(900px, 92vw);
   margin: 0 auto;
-  padding: 1.25rem 0 3rem;
+  padding: 4.25rem 0 3rem;
 }
 
 .topbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0.9rem 1rem;
+  width: min(900px, 92vw);
   background: transparent;
   border: none;
   outline: none;
@@ -181,7 +184,7 @@ h1 {
 @media (max-width: 640px) {
   .page {
     width: 94vw;
-    padding-top: 0.7rem;
+    padding-top: 6rem;
   }
 
   .topbar {
