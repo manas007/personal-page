@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name — Work History</title>
-    <meta name="description" content="Work history page." />
+    <title>MT-Work History</title>
+    <meta name="description" content="Professional experience page" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,7 +12,7 @@
 
     <div class="page">
       <header class="topbar">
-        <a class="brand" href="index.html">Your Name</a>
+        <a class="brand" href="index.html">Manas Tripathi</a>
         <nav class="navbar" aria-label="main navigation">
           <a href="index.html">Home</a>
           <a class="active" href="work-history.html" aria-current="page">Work History</a>
@@ -24,35 +24,65 @@
         <section class="section-heading">
           <p class="kicker">timeline</p>
           <h1>Work History</h1>
-          <p class="tagline">Selected roles and projects over recent years.</p>
+          <p class="tagline">Some of the things that have shaped my professional journey</p>
         </section>
 
         <section class="timeline" aria-label="work history timeline">
           <article class="entry">
-            <p class="entry-meta">2023 — Present</p>
-            <h3>Senior Product Designer · Atlas Studio</h3>
-            <p>
-              Led a cross-functional team crafting digital products for culture and
-              education clients, from concept through launch.
-            </p>
+            <p class="entry-meta">Sep 2021 — Present</p>
+            <h3>Data Scientist III · F5 Inc</h3>
+            <ul>
+              <li>Founding data scientist for F5's Global Services organization. Designed and implemented the core analytics framework for 
+              support operations across all channels, enabling data-driven decision-making and operational insights
+              </li>
+              <li>Designed, containerized, and deployed a ML based case search web app using Dash for front-end, open-source pre-trained 
+              bi-encoder model for embedding retrieval, Snowflake as the vector store, and Azure Container Apps for deployment
+            </li>
+            <li>
+              Built a batch job for summarizing live chat transcripts using Hugging Face pipeline and Databricks workflow. Implemented 
+              topic modeling on the summarized output to identify top issues from support chats resulting in 30% reduction in volume
+            </li>
+            <li>Implemented key phrase extraction to tag support cases and identify areas for problem management, reducing case avoidance analysis time from weeks to days</li>
+            <li>Migrated and refactored legacy Snowflake views into modular dbt models, improving code scalability and version control</li>  
+            <li>Developed denormalized tables that enabled 200+ users across the organization access support data for CX analytics</li>  
+            <li>Designed and analyzed A/B tests to evaluate the impact of Generative AI features on F5's support portal</li>  
+            <li>Built end-to-end data pipeline to ingest website survey data resulting in 60% faster resolution of customer feedback</li>
+            <li>Upskilled 20+ members in the organization with SQL and Tableau to accelerate operational reporting capabilities</li>
+          </ul>
           </article>
 
           <article class="entry">
-            <p class="entry-meta">2020 — 2023</p>
-            <h3>Creative Technologist · Northlight Collective</h3>
-            <p>
-              Built interactive web experiences combining editorial storytelling,
-              lightweight animation, and performant front-end systems.
-            </p>
+            <p class="entry-meta">March 2020 — August 2021</p>
+            <h3>Data Analyst III · F5 Inc</h3>
+            <ul>
+              <li>Developed analytics to demonstrate 15% reduction in average time to case closure due to KCS leading to an enterprise-wide implementation of KCS coaching program</li>
+              <li>Built datasets and visualizations to show improvements in KPIs related to content published by engineers resulting in an 18% uptick in article creation by support engineers</li>
+              <li>Analyzed enterprise search effectiveness to identify content gaps, enabling content engineers improve case deflection by 15%</li>
+              <li>Designed, built, and maintained complex BI dashboards, scorecards and reports that provided actionable insights to 
+                Support Leadership resulting in improvement of service metrics (CSAT and case escalation rate)</li>
+              <li>Built ETL flows to deliver means and metrics to track the operational efficiency of assisted support thereby saving time 
+                spent on manual data export and munging</li>
+              <li>Assisted leadership team in delivering key reporting and insights for recurring quarterly business reviews</li>
+            </ul>
           </article>
 
           <article class="entry">
-            <p class="entry-meta">2018 — 2020</p>
-            <h3>Product Designer · Lantern Labs</h3>
-            <p>
-              Designed end-to-end interfaces for early-stage software products and
-              collaborated with engineering on design system foundations.
-            </p>
+            <p class="entry-meta">February 2017 — August 2018</p>
+            <h3>Senior Application Developer · Bank of New York Mellon Technology</h3>
+            <ul>
+              <li>Contributed to the development of proprietary software for automated processing of 10,000+ trades daily in the bank</li>
+              <li>Engineered an audit tool to preserve user actions on trades, saving millions of dollars by preventing potential regulatory violations</li>
+              <li>Developed reusable UI components in order to remove dependencies on legacy systems and reduce development time</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <p class="entry-meta">July 2015 — January 2017</p>
+            <h3>BI Engineer · Bank of New York Mellon Technology</h3>
+            <ul>
+              <li>Developed data models and designed Tableau dashboards for Client Inquiry Application enabling team leads to reduce missed SLAs by 22% through improved capacity planning and reduced turn-around time.</li>
+              <li>Revamped legacy dashboards and improved query performance by 40%</li>
+            </ul>
           </article>
         </section>
       </main>
