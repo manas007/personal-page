@@ -45,8 +45,10 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.9rem 1rem;
-  border: 1px solid var(--line);
-  background: rgba(214, 193, 163, 0.82);
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
   backdrop-filter: blur(6px);
 }
 
