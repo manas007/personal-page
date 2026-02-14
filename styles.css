@@ -118,6 +118,19 @@ h1 {
   line-height: 1.7;
 }
 
+.tagline a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 600;
+}
+
+.tagline a:hover,
+.tagline a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .note {
   margin-top: 2rem;
   font-style: italic;
