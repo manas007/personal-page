@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.title }}" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="{{ site.baseurl }}/index.html">{{ site.title }}</a>
+        <nav class="navbar" aria-label="main navigation">
+          <a href="{{ site.baseurl }}/index.html">Home</a>
+          <a href="{{ site.baseurl }}/work-history.html">Work History</a>
+          <a href="{{ site.baseurl }}/academic-history.html">Academic History</a>
+          <a href="{{ site.baseurl }}/blog.html">Blog</a>
+        </nav>
+      </header>
+
+      <main class="layout">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
