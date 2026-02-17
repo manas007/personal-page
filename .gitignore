@@ -1,0 +1,18 @@
+# Jekyll/Bundler defaults
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local Ruby / Bundler files
+.bundle/
+vendor/
+.ruby-version
+.ruby-gemset
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
