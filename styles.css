@@ -149,6 +149,25 @@ h1 {
   gap: 1.2rem;
 }
 
+.timeline a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.15rem;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.timeline a:hover,
+.timeline a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.timeline ul li {
+  margin-bottom: 1rem; /* Adjust this value (e.g., 10px, 2rem) for more or less gap */
+}
+
+
 .entry {
   border-left: 1px solid var(--line);
   padding-left: 1rem;
