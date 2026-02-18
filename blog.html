@@ -1,46 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog — MT</title>
-    <meta name="description" content="Blog posts and writing." />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="noise" aria-hidden="true"></div>
+---
+layout: default
+title: Blog
+---
+<section class="section-heading">
+  <p class="kicker">writing</p>
+  <h1>Blog</h1>
+  <p class="tagline">Short thoughts and longer experiments.</p>
+</section>
 
-    <div class="page">
-      <header class="topbar">
-        <a class="brand" href="index.html">Dancing with Data</a>
-        <nav class="navbar" aria-label="main navigation">
-          <a href="index.html">Home</a>
-          <a href="work-history.html">Work History</a>
-          <a href="academic-history.html">Academic History</a>
-          <a class="active" href="blog.html" aria-current="page">Blog</a>
-        </nav>
-      </header>
-
-      <main class="layout">
-        <section class="section-heading">
-          <p class="kicker">writing</p>
-          <h1>Blog</h1>
-          <p class="tagline">Short thoughts and longer experiments.</p>
-        </section>
-
-        <section class="timeline">
-          <ul>
-            <li>
-              <a href="posts/pomodoro-technique.html">Pomodoro Technique</a>
-              <small> — Feb 16, 2026</small>
-            </li>
-            <li>
-              <a href="posts/reflections-on-learning.html">Reflections on Learning</a>
-              <small> — Feb 17, 2026</small>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  </body>
-</html>
+<section class="timeline">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small> — {{ post.date | date: "%b %d, %Y" }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
