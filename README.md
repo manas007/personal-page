@@ -32,7 +32,7 @@ bundle exec jekyll serve --baseurl ""
 ```
 
 4. **View the site:**
-Open http://localhost:4000 in the browser. The server will automatically refresh we save a file.
+Open http://localhost:4000 in the browser. The server will automatically refresh when we save a file.
 
 
 ## Writing Blogs
