@@ -17,6 +17,7 @@ Okay, this is the "explain like I am 5" definition of PCA. However, it is formal
 
 ### Covariance Matrix
 $$cov(x, y) = \frac{\sum_{i=1}^{N}(x_i - \bar{x})(y_i - \bar{y})}{N - 1}$$
+
 Imagine you have two lists. List A and List B (each containing some numbers). Next step is that you find the mean of each list, then subtract mean from every item in the list, and then multiply each element in list A to the corresponding element in list B. Once you are done, you take the average of the resulting list. If covariance is large and positive, it should mean that potentially each element in list A if more than the mean, and each element in list B is more than the mean. 
 
 A covariance matrix for a dataset with 100 rows and 4 features will have a covariance matrix of size 4 * 4
