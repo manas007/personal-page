@@ -5,16 +5,15 @@ date: 2026-03-19
 excerpt: "A simple, no-frill guide to understanding PCA"
 ---
 
-<!-- This script allows Jekyll to render LaTeX equations -->
-<script src="https://cdn.jsdelivr.net"></script>
 
 Almost every dataset that you work with is high-dimensional, meaning there are many features (or columns) in your dataset.
 Dimensionality reduction is a way to reduce the dimensions in your dataset. Why though ? Well, more columns (features) means you need more storage space, and spend more time on processing the data.
 
-Think of this with a simple example. If you catch a cold, and let's say you have 100 different types of medicines available to you at any time in your house. What if instead of shifting through the entire rack of 100 medicines, you maybe had 5 medicines that compresses the "Active ingredients" from all 100 medicines. Well, maybe it is not safe, but you no longer need to guess which once is the correct medicine. 
+Think of this with a simple example. Let's say you have 100 different types of medicines available to you at any time in your house. You wake up one day and find yourself down with a fever and cold. You do not want to leaver your bed, and certainly do not want to shift through 100 medicines and find the one that can treat the fever.
+What if you maybe had 5 medicines that compresses the "active ingredients" from all 100 medicines. While this may not be a safe choice, but you no longer need to go through all the medicines in your box! 
 
-Okay, this is the "explain like I am 5" definition. PCA is formally described as "eigenvectors of the covariance matrix".
-Big oooof ? Let's break it down one by one.
+Okay, this is the "explain like I am 5" definition of PCA. However, it is formally described as "eigenvectors of the covariance matrix".
+**Big oooof** ? Let's break it down one by one.
 
 ### Covariance Matrix
 $$cov(x, y) = \frac{\sum_{i=1}^{N}(x_i - \bar{x})(y_i - \bar{y})}{N - 1}$$
