@@ -243,7 +243,7 @@ h1 {
 
 /* Increase MathJax size globally */
 mjx-container {
-  font-size: 115% !important; /* Adjust percentage as needed */
+  font-size: 200% !important; /* Adjust percentage as needed */
   color: inherit;
 }
 
