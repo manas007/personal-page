@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PCA by hand - A simple guide to PCA"
+title: "PCA by hand"
 date: 2026-03-19
 excerpt: "A simple, no-frill guide to understanding PCA"
 ---
