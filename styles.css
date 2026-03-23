@@ -240,3 +240,14 @@ h1 {
     font-size: 1.1rem;
   }
 }
+
+/* Increase MathJax size globally */
+mjx-container {
+  font-size: 115% !important; /* Adjust percentage as needed */
+  color: inherit;
+}
+
+/* Optional: Add extra space around block equations */
+mjx-container[display="true"] {
+  margin: 1.5em 0 !important;
+}
