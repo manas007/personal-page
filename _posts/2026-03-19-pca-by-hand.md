@@ -41,7 +41,6 @@ multiply a column vector with a matrix, the orientation of the vector changes. T
 An **eigenvector** is a vector that does not change its direction or in other words, stays on its original span, when multiplied by a matrix. It can, however, shrink or stretch along the same direction (or in the opposite direction) due to this matrix multiplication (or linear transformation). The amount by which this the vector shrinks or stretches is called the **eigenvalue**. For any given matrix, there may exists multiple eigenvectors, and therefore, multiple eigenvalues.
 Why is an eigenvector valueable?
 
-Now going back to our covariance matrix, if we find the eigenvectors of our covariance matrix, we 
-We calculate the covariance matrix of our data, we calculate the eigenvectors of the covariance matrix, and this gives us our principal components.
+Now going back to our covariance matrix, We calculate the covariance matrix of our data, we calculate the eigenvectors of the covariance matrix, and this gives us our principal components.
 
 
